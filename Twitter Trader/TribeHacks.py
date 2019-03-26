@@ -136,7 +136,7 @@ def scan_update():
     config_split = config.read().split()
     username = config_split[3]
     personal_email = config_split[1]
-    
+
     print("Currently Running...")
     #needed for OAuth
     consumer_key = 'AZbJHCyf0Cz8JSHhUWKimQoJ4'
@@ -152,7 +152,6 @@ def scan_update():
     api = tweepy.API(auth)
 
     #user ID to analyze tweets
-    username = 'realHarryRhee'
     user_tweet = api.user_timeline(screen_name = username, count = 1, include_rts = True)
 
     for status in user_tweet:

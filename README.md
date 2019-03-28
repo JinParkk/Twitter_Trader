@@ -13,7 +13,7 @@ These are the following instructions and important details to run the code Tribe
 
 - Make sure all python packages are downloaded
 - Make sure all files in the zip folder are in the same folder
-- Check if consumer/access keys and tokens are filled out (using our ID)
+- Check if consumer/access keys and tokens are filled out
 
 To run the project...
 

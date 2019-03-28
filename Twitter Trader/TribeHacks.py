@@ -98,8 +98,8 @@ def stock_test(tweet_text):
     bd_tweet = simplify_text(tweet_text)
     for match in bd_tweet:
         if match in s_name:
-            api_key = "pk_fec752f0286a4c5489df5979fcfb26bb"
-            api_secret = "sk_256935ada3b8404eb2273aad5775162e"
+            api_key = 'API_KEY_HERE'
+            api_secret = 'API_SECRET_HERE'
             t_name = dict_stocks.get(match)
             stream_url = "https://cloud.iexapis.com/beta/stock/" + t_name + "/quote?token=" + api_secret
             r = requests.get(stream_url, stream = True) 
@@ -139,10 +139,10 @@ def scan_update():
 
     print("Currently Running...")
     #needed for OAuth
-    consumer_key = 'AZbJHCyf0Cz8JSHhUWKimQoJ4'
-    consumer_secret = 'hmQdOJ7aKtUYyiXZO1DK8JKMsaZrwmpkEEnF90U2TGsHVFi9Q4'
-    access_token = '783679694814208000-zrr4pjYzMKbTS3aK2NVfy9ZZF7ArB10'
-    access_token_secret = 'A4UdJEucAudYMLvVbgSUveB1vidG1HwV6LpvyA83saXmC'
+    consumer_key = 'CONSUMER_KEY_HERE'
+    consumer_secret = 'CONSUMER_SECRET_HERE'
+    access_token = 'ACCESS_TOKEN_HERE'
+    access_token_secret = 'ACCESS_TOKEN_SECRET_HERE'
 
     #authorization process
     auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
